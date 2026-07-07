@@ -8,8 +8,16 @@
 body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
 .wrapper{max-width:1180px;margin:0 auto;padding:34px 22px 70px}
 header{text-align:center;margin-bottom:30px}
+.header-top{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:20px}
+.header-title{flex:1 1 auto;min-width:260px}
+.header-actions{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
 h1{color:#4868a8;font-size:clamp(34px,5vw,58px);font-weight:900}
 .subtitle{color:#617086;font-size:17px;margin-top:8px}
+.pdf-button{display:inline-flex;align-items:center;gap:8px;background:#4868a8;color:white;font-weight:800;font-size:14px;padding:12px 18px;border-radius:999px;text-decoration:none;white-space:nowrap;box-shadow:0 3px 10px rgba(31,50,90,.16)}
+.pdf-button:hover{background:#3a5690}
+.specialty-button{background:#48A68D}
+.specialty-button:hover{background:#3a8873}
+@media(max-width:640px){.header-top{flex-direction:column}}
 .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;align-items:start}
 
 .chapter summary{
@@ -92,7 +100,15 @@ h1{color:#4868a8;font-size:clamp(34px,5vw,58px);font-weight:900}
 .search-result-title{font-weight:900;color:#4868a8;margin-bottom:4px}
 .search-result-path{font-size:12px;font-weight:700;color:#617086;margin-bottom:5px}
 .search-result-snippet{font-size:13px;color:#455066;line-height:1.4}
-.search-empty{padding:12px 14px;color:#617086;font-size:14px}</style></head><body><div class="wrapper"><header><h1>SENORIF interactif</h1><p class="subtitle">Cancers et pathologies du sein</p></header>
+.search-empty{padding:12px 14px;color:#617086;font-size:14px}</style></head><body><div class="wrapper"><header>
+<div class="header-top">
+<div class="header-title"><h1>SENORIF interactif</h1><p class="subtitle">Cancers et pathologies du sein</p></div>
+<div class="header-actions">
+<a class="pdf-button" href="https://cdn.curie.fr/media/ckeditor_pdf/SENORIF_2025-2026_1911.pdf" target="_blank" rel="noopener">📄 Parcourir le SENORIF</a>
+<a class="pdf-button specialty-button" href="specialites.html">🩺 Entrée par spécialité</a>
+</div>
+</div>
+</header>
 <div class="search-wrap">
 <input autocomplete="off" class="search-box" id="siteSearch" placeholder="Rechercher un mot-clé…" type="search">
 <div class="search-results" id="searchResults"></div>
