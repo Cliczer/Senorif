@@ -100,6 +100,7 @@ h1{color:#4868a8;font-size:clamp(34px,5vw,58px);font-weight:900}
 .search-result-title{font-weight:900;color:#4868a8;margin-bottom:4px}
 .search-result-path{font-size:12px;font-weight:700;color:#617086;margin-bottom:5px}
 .search-result-snippet{font-size:13px;color:#455066;line-height:1.4}
+.search-result-snippet mark{background:#fff3a3;padding:0 2px;border-radius:3px}
 .search-empty{padding:12px 14px;color:#617086;font-size:14px}</style></head><body><div class="wrapper"><header>
 <div class="header-top">
 <div class="header-title"><h1>SENORIF interactif</h1><p class="subtitle">Cancers et pathologies du sein</p></div>
@@ -166,7 +167,8 @@ h1{color:#4868a8;font-size:clamp(34px,5vw,58px);font-weight:900}
   let index=[];
   fetch("search-index.json").then(r=>r.ok?r.json():[]).then(function(d){index=Array.isArray(d)?d:[]}).catch(function(){index=[]});
   box.addEventListener("input",function(){
-    const q=norm(box.value.trim());
+    const rawQ=box.value.trim();
+    const q=norm(rawQ);
     results.innerHTML="";
     if(q.length<2){results.classList.remove("open");return}
     const found=index.filter(x=>norm(x.text).includes(q)).slice(0,40);
@@ -174,8 +176,14 @@ h1{color:#4868a8;font-size:clamp(34px,5vw,58px);font-weight:900}
     results.innerHTML=found.map(function(x){
       const normText=norm(x.text);
       const snip=snippetAround(x.text, normText, q);
-      return '<a class="search-result" href="'+escS(x.href)+'"><div class="search-result-title">'+escS(x.title)+'</div><div class="search-result-path">'+escS(x.chapter)+'</div>'
-        +(snip?'<div class="search-result-snippet">'+escS(snip)+'</div>':'')+'</a>';
+      const hrefWithHl=x.href+(x.href.includes("?")?"&":"?")+"hl="+encodeURIComponent(rawQ);
+      let snipHtml=escS(snip);
+      if(snip){
+        const re=new RegExp("("+rawQ.trim().replace(/[.*+?^${}()|[]\]/g,"\$&")+")","gi");
+        snipHtml=snipHtml.replace(re,"<mark>$1</mark>");
+      }
+      return '<a class="search-result" href="'+escS(hrefWithHl)+'"><div class="search-result-title">'+escS(x.title)+'</div><div class="search-result-path">'+escS(x.chapter)+'</div>'
+        +(snip?'<div class="search-result-snippet">'+snipHtml+'</div>':'')+'</a>';
     }).join("");
     results.classList.add("open");
   });
