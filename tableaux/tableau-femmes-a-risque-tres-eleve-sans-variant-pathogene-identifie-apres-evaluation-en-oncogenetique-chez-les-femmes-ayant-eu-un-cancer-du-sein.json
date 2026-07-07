@@ -1,0 +1,20 @@
+{
+  "colonnes": [
+    "",
+    "IRM mammaire annuelle",
+    "MammographieAnnuelle",
+    "Echographie mammaireannuelle",
+    "Examen clinique",
+    "Durée du suivi"
+  ],
+  "lignes": [
+    [
+      "Cancer du sein  <65 ans",
+      "OUI",
+      "OUI2 incidences",
+      "optionnelle",
+      "semestriel",
+      "Surveillance radiologique à réévaluer tous les 10 ans en particulier la poursuite ou pas de l’IRM après 55 ans) et le rythme"
+    ]
+  ]
+}

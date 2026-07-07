@@ -1,0 +1,46 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Evaluation du risque thrombotique : — SENORIF</title><style>:root{--blue:#4c78b8;--text:#111827;--muted:#6b7280;--border:#e5e7eb;--card:#f8fafc;--green:#16a34a}*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:white;color:var(--text);line-height:1.65}main{max-width:980px;margin:0 auto;padding:38px 24px 70px}.back{display:inline-block;margin-bottom:28px;color:var(--blue);font-weight:800;text-decoration:none}.content{background:white;border-top:10px solid var(--blue);border-radius:20px;box-shadow:0 10px 28px rgba(31,50,90,.08);padding:34px}h1{color:var(--blue);font-size:34px;font-weight:500;margin:0 0 14px}h2{color:var(--blue);font-size:24px;font-weight:500;margin:0 0 22px}p,div,li,span{font-size:16px}p{margin:0 0 16px}ul{margin:0 0 18px 24px}.list{display:grid;gap:12px;margin-top:18px}.item{display:block;padding:16px 18px;border:1px solid var(--border);border-left:8px solid var(--blue);border-radius:14px;background:#f9fafb;color:var(--text);text-decoration:none;font-weight:800}img{max-width:100%;height:auto}table{width:100%;border-collapse:collapse;margin:18px 0;font-size:16px}th,td{border:1px solid #6b7280;padding:8px 10px;vertical-align:top;font-size:16px;line-height:1.45}th{font-weight:900;background:#f8fafc}.test-btn{border:0;border-radius:999px;background:var(--blue);color:white;padding:13px 20px;font-weight:900;cursor:pointer;margin:8px 0 22px}.quiz{margin:10px 0 30px;display:none}.quiz.active{display:block}.question-card{border:1px solid var(--border);border-left:8px solid var(--blue);border-radius:14px;background:var(--card);padding:18px;margin:14px 0}.question-card h3{font-size:18px;margin:0 0 8px;color:#111827}.help{color:var(--muted);font-size:14px;margin:0 0 12px}.choices{display:flex;flex-direction:column;gap:9px}.choice{border:1px solid var(--border);background:white;border-radius:10px;padding:12px 14px;font-weight:800;text-align:left;cursor:pointer}.choice:hover{border-color:var(--blue);background:#eef5ff}.choice.selected{background:#e8f1ff;border-color:var(--blue);color:#274f91}.result{border:1px solid #bbf7d0;border-left:8px solid var(--green);border-radius:14px;background:#f0fdf4;padding:20px;margin:16px 0 24px}.result h3{margin:0 0 10px;color:#166534}.note{margin-top:20px;padding:14px 16px;background:#f9fafb;border:1px solid var(--border);border-radius:12px;color:var(--muted);font-size:14px}@media(max-width:600px){main{padding:28px 18px 60px}.content{padding:24px}h1{font-size:28px}}</style></head><body><main><a class="back" href="../../index.html">← Retour</a><div class="content" style="--blue:#5570AE"><h1>Evaluation du risque thrombotique :</h1><p>Il est important d’évaluer le risque thrombotique dès le diagnostic, en prenant en compte les facteurs de risque relatifs au patient (antécédents thrombotiques personnels ou familiaux, facteurs de risque vasculaire), relatifs à la maladie (histologie, stade avancé et relatifs au traitement (traitement hormonal, anthracyclines, cathéter central) (Blondon et al, . Blood Adv. 2022; Bundred et al, . Br J Cancer. 2005). Les outils de calcul de risque comme COMPASS-CAT (Gerotziafas et al, Oncologist. 2017)servent comme une boussole à la décision de mise en place de prévention antithrombotique. La discussion avec la patiente sur le risque thrombotique et hémorragique et sur sa préférence est indispensable. Les modalités du traitement de la maladie thromboembolique veineuse sont détaillées dans les recommandations de l’AFSOS (AFSOS).</p>
+<p>Références&nbsp;:</p>
+<p>Blondon M, Bodmer A, Thouvenin L, Lecompte T, Righini M, Fontana P, Casini A. Differential impact of tamoxifen and aromatase inhibitors on thrombin generation: the prospective HEMOBREAST cohort. Blood Adv. 2022 May 10;6(9):2884-2892. doi: 10.1182/bloodadvances.2021006623. PMID: 35086148; PMCID: PMC9092409.</p>
+<p>Bundred NJ. The effects of aromatase inhibitors on lipids and thrombosis. Br J Cancer. 2005 Aug;93 Suppl 1(Suppl 1):S23-7. doi: 10.1038/sj.bjc.6602692. PMID: 16100522; PMCID: PMC2361692.</p>
+<p>Gerotziafas GT, Taher A, Abdel-Razeq H, AboElnazar E, Spyropoulos AC, El Shemmari S, Larsen AK, Elalamy I; COMPASS–CAT Working Group. A Predictive Score for Thrombosis Associated with Breast, Colorectal, Lung, or Ovarian Cancer: The Prospective COMPASS-Cancer-Associated Thrombosis Study. Oncologist. 2017 Oct;22(10):1222-1231. doi: 10.1634/theoncologist.2016-0414. Epub 2017 May 26. PMID: 28550032; PMCID: PMC5634762.</p>
+<p>https://www.afsos.org/fiche-referentiel/prise-charge-de-maladie-thromboembolique-veineuse-cancerologie/</p>
+</div></main><script>
+document.addEventListener("DOMContentLoaded",function(){
+  document.querySelectorAll(".senorif-table[data-file]").forEach(function(holder){
+    var file=holder.getAttribute("data-file");
+    fetch(file+"?v="+Date.now())
+      .then(function(r){ if(!r.ok) throw new Error("HTTP "+r.status); return r.json(); })
+      .then(function(data){
+        var table=document.createElement("table");
+        var tbody=document.createElement("tbody");
+
+        if(data.colonnes && data.colonnes.length){
+          var tr=document.createElement("tr");
+          data.colonnes.forEach(function(c){
+            var th=document.createElement("th");
+            th.textContent=c;
+            tr.appendChild(th);
+          });
+          tbody.appendChild(tr);
+        }
+
+        (data.lignes||[]).forEach(function(row){
+          var tr=document.createElement("tr");
+          row.forEach(function(c){
+            var td=document.createElement("td");
+            td.textContent=c;
+            tr.appendChild(td);
+          });
+          tbody.appendChild(tr);
+        });
+
+        table.appendChild(tbody);
+        holder.innerHTML="";
+        holder.appendChild(table);
+      })
+      .catch(function(err){
+        holder.innerHTML="<div class='note'>Tableau impossible à charger : "+err.message+"</div>";
+      });
+  });
+});
+</script></body></html>

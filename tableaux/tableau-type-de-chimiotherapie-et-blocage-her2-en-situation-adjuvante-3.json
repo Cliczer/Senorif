@@ -1,0 +1,20 @@
+{
+  "colonnes": [
+    "HER2+, ADJUVANT",
+    "HER2+, ADJUVANT"
+  ],
+  "lignes": [
+    [
+      "Standard",
+      "Options"
+    ],
+    [
+      "4 EC90-100/AC suivis de 4 cycles de taxanes + Trastuzumab, poursuite Trastuzumab pour 1 an au total (18 injections au total)Si pT1pN0 : 12 injections de Paclitaxel 80 hebdomadaire + Trastuzumab 1 an (schéma Tolaney)",
+      "3 EC puis 3 cycles de taxanes + trastuzumab-  pN+ : 4 EC puis 4 cycles de taxanes + trastuzumab ET pertuzumab (si remboursement possible)  si CI aux anthracyclines: 4 Docétaxel+ Cyclophosphamide  + trastuzumab (schéma Jones) En cas d’exposition antérieure ou CI aux anthracyclines:       4-6 Docétaxel 75+ cyclophosphamide 600            + Trastuzumab ou       6 Docétaxel 75 `+ carboplatine AUC5                        +TrastuzumabSi N+/prolifération élevée : schéma dose-dense"
+    ],
+    [
+      "Femme âgée ≥ 70 ans - 4 Docétaxel+ Cyclophosphamide + trastuzumab 12 taxol hebdomadaire+ trastuzumab",
+      "Femme âgée ≥ 70 ans- Si en très bon état général (G8 >= 14) et après évaluation oncogériatrique : séquentiel+ trastuzumab- Si altération de l’état gériatrique : trastuzumab monothérapie (associée à une hormonothérapie  si RH+)"
+    ]
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "colonnes": [
+    "",
+    "IRMmammaire annuelle",
+    "Mammographie annuelle",
+    "Echographiemammaire annuelle",
+    "Examen clinique",
+    "Durée du suivi"
+  ],
+  "lignes": [
+    [
+      "Indemne avant 40 ans",
+      "NON",
+      "NON*",
+      "NON",
+      "annuel",
+      ""
+    ],
+    [
+      "Indemne 40-49 ans",
+      "NON",
+      "OUI2 incidences",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Indemne ≥ 50 ans",
+      "NON",
+      "NONtous les 2 ans (dépistageorganisé)",
+      "optionnelle",
+      "annuel",
+      ""
+    ],
+    [
+      "ATCD CLIS,Hyperplasie canalaire atypique, Hyperplasie lobulaireatypique",
+      "NON",
+      "OUI2 incidences",
+      "optionnelle",
+      "annuel",
+      "Annuel pendant 10 ansPuis mammo/2 ans"
+    ]
+  ]
+}

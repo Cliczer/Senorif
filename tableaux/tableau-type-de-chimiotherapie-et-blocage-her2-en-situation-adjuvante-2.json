@@ -1,0 +1,20 @@
+{
+  "colonnes": [
+    "LUMINAUX, RH+ HER2- ADJUVANT",
+    "LUMINAUX, RH+ HER2- ADJUVANT"
+  ],
+  "lignes": [
+    [
+      "Standard",
+      "Options"
+    ],
+    [
+      "3-4 EC 100 ou 4 AC60 suivis de 3-4 cycles de docétaxel q 3 semaines ou 9-12 paclitaxel 80 hebdomadaire sans pause      Chez les N+ : Dose-dense : 4 cycles de AC60/E90C600 q 14 jours suivis de 12 paclitaxel 80 hebdomadaire sans pause",
+      "4-6 Docétaxel (ou w paclitaxel) + Cyclophosphamide (CI aux anthracyclines, fragilité) ( ref: Plan B , DOI: ; Jones: DOI:)"
+    ],
+    [
+      "Femme âgée ≥ 70 ans :La référence reste l’hormonothérapie sans chimiothérapie",
+      "Femme âgée ≥ 70 ans :si haut risque : - 4 Docétaxel+ Cyclophosphamide - 4 AC- si en très bon état général (G8 >= 14) et après évaluation oncogériatrique : schéma séquentiel ou 6  Docétaxel+ Cyclophosphamide  - 12 taxol hebdomadaire (accord d’expert :   Biganzoli, Lancet Oncol 2021)"
+    ]
+  ]
+}

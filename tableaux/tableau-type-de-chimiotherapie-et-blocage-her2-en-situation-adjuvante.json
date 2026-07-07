@@ -1,0 +1,20 @@
+{
+  "colonnes": [
+    "TRIPLE NEGATIF ADJUVANT",
+    "TRIPLE NEGATIF ADJUVANT"
+  ],
+  "lignes": [
+    [
+      "Standard",
+      "Options"
+    ],
+    [
+      "Dose-dense: 4 cycles de AC60/E90C600 q 14 jours suivis de 12 paclitaxel 80 hebdomadaire sans pause",
+      "pT1 pN0: EC standard q 3 semaines x 3-4 cycles, puis 3-4 cycles de taxanesCarboplatine si N+ en combinaison au paclitaxel si forme graveCapécitabine      métronomique (650mg/m2 en continu pendant 1 an)  post séquentiel adjuvant pour des formes graves (SYSUCC)"
+    ],
+    [
+      "Femme âgée ≥ 70 ans :- 4 Docétaxel+ Cyclophosphamide - 4 AC",
+      "Femme âgée ≥ 70 ans : - Si très bon état général (G8 >= 14) et après évaluation oncogériatrique : schéma séquentiel ou 6 Docétaxel+ Cyclophosphamide   - 12 taxol hebdomadaire (accord d’expert :   Biganzoli, Lancet Oncol 2021)"
+    ]
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "colonnes": [
+    "Test",
+    "Méthode et seuil",
+    "Valeur pronostique (niveaux de preuve)",
+    "Indication"
+  ],
+  "lignes": [
+    [
+      "Index (Score) mitotique/mm²",
+      "Compte des mitoses selon définition (selon les recommandations de Ellis et Elston) et abaques de centre. Classification en 3 catégories (1, 2, 3)",
+      "Niveau de preuve III-IV pour décision de chimiothérapie (si IM élevé ou intermédiaire ?)",
+      "NON RECOMMANDE COMME CRITERE UNIQUE DE PRISE DE DECISION"
+    ],
+    [
+      "Ki67",
+      "Cf. technique décrite + haut",
+      "Niveau de preuve III (études rétrospectives multiples) pour décision de chimiothérapieReproductibilité faibleTumeur opérée privilégiée (versus biopsie)",
+      "NON RECOMMANDE COMME CRITERE UNIQUE DE PRISE DE DECISION sauf cas particuliers"
+    ]
+  ]
+}

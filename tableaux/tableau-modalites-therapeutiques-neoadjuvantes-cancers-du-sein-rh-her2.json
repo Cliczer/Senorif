@@ -1,0 +1,24 @@
+{
+  "colonnes": [
+    "",
+    "Standard",
+    "Options"
+  ],
+  "lignes": [
+    [
+      "CNA",
+      "Schéma préféréAC/ECdd  + wPx12 alternativeECx3-4 + Taxanes* x 3-4",
+      "CI aux anthra : TC** x 6"
+    ],
+    [
+      "HT (patiente ménopausée)",
+      "-",
+      "IA 6 mois"
+    ],
+    [
+      "Post néoadjuvant",
+      "-HT +/- iCDK4/6 selon les AMM en vigueur-si gBRCAm et CPS-EG ≥3*** et/ou haut risque : ajout olaparib 1 an (séquence olaparib – iCDK4/6  possible en OPTION)",
+      "Si HT-options d’évaluation : Ki67, score PEPI-chimiothérapie possible, à discuter au cas par cas"
+    ]
+  ]
+}
