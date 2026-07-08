@@ -82,7 +82,7 @@ mark{background:#fff3a3;padding:0 2px;border-radius:3px}
 <p>IHC HER2</p>
 <p><img src="../../images/image-her2-c-erbb2.jpeg" alt="Illustration : Her2 (c-erbB2)" style="max-width:100%;height:auto;display:block;margin:10px 0;" loading="lazy" decoding="async" data-senorif-image="images/image-her2-c-erbb2.jpeg" width="1280" height="720" srcset="../../images/image-her2-c-erbb2-sm.jpeg 800w, ../../images/image-her2-c-erbb2.jpeg 1280w" sizes="(max-width:900px) 100vw, 832px"></p>
 <p>HYBRIDATION IN SITU HER2</p>
-<p><img src="../../images/image-her2-c-erbb2-2.jpeg" alt="Illustration 2 : Her2 (c-erbB2)" style="max-width:100%;height:auto;display:block;margin:10px 0;" loading="lazy" decoding="async" data-senorif-image="images/image-her2-c-erbb2-2.jpeg" width="1600" height="964" srcset="../../images/image-her2-c-erbb2-sm-2.jpeg 800w, ../../images/image-her2-c-erbb2-2.jpeg 1600w" sizes="(max-width:900px) 100vw, 832px"></p>
+<p><img src="../../images/image-her2-c-erbb2-2.jpeg" alt="Illustration 2 : Her2 (c-erbB2)" style="max-width:100%;height:auto;display:block;margin:10px 0;" loading="lazy" decoding="async" data-senorif-image="images/image-her2-c-erbb2-2.jpeg" width="1850" height="1115" srcset="../../images/image-her2-c-erbb2-sm-2.jpeg 800w, ../../images/image-her2-c-erbb2-2.jpeg 1850w" sizes="(max-width:900px) 100vw, 832px"></p>
 </div>
 <div class="page-nav"><a class="prev" href="../../anatomopathologie/immunohistochimie/ki67.html"><span class="nav-label">← Précédent</span>Ki67</a><span></span></div>
 </main>
@@ -276,7 +276,12 @@ document.addEventListener("DOMContentLoaded",function(){
       var lastFocused=null;
       overlay.addEventListener("click",function(e){ if(e.target===overlay||e.target===closeBtn) closeLightbox(); });
       document.addEventListener("keydown",function(e){
-        if(e.key==="Escape" && overlay.classList.contains("open")) closeLightbox();
+        if(!overlay.classList.contains("open")) return;
+        if(e.key==="Escape"){ closeLightbox(); return; }
+        // Piège à focus : le bouton fermer est le seul élément focalisable
+        // de la boîte de dialogue, donc Tab (dans un sens ou l'autre) doit
+        // toujours y ramener le focus au lieu de sortir vers la page en dessous.
+        if(e.key==="Tab"){ e.preventDefault(); closeBtn.focus(); }
       });
       overlay._open=function(src, sourceEl){
         lastFocused=sourceEl||null;

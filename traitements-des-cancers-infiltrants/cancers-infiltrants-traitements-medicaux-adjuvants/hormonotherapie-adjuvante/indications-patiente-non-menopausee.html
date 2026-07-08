@@ -275,7 +275,12 @@ document.addEventListener("DOMContentLoaded",function(){
       var lastFocused=null;
       overlay.addEventListener("click",function(e){ if(e.target===overlay||e.target===closeBtn) closeLightbox(); });
       document.addEventListener("keydown",function(e){
-        if(e.key==="Escape" && overlay.classList.contains("open")) closeLightbox();
+        if(!overlay.classList.contains("open")) return;
+        if(e.key==="Escape"){ closeLightbox(); return; }
+        // Piège à focus : le bouton fermer est le seul élément focalisable
+        // de la boîte de dialogue, donc Tab (dans un sens ou l'autre) doit
+        // toujours y ramener le focus au lieu de sortir vers la page en dessous.
+        if(e.key==="Tab"){ e.preventDefault(); closeBtn.focus(); }
       });
       overlay._open=function(src, sourceEl){
         lastFocused=sourceEl||null;
