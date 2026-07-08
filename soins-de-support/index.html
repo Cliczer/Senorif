@@ -15,6 +15,11 @@ main{flex:1 1 auto;max-width:900px;margin:0 auto;padding:38px 24px 90px;min-widt
 .nav-node:hover{background:#eef1fa}
 .nav-node.current{background:var(--blue);color:white;font-weight:800}
 .nav-toggle-btn{display:none}
+#sidebarEdgeBtn{position:fixed;top:26px;left:280px;transform:translateX(-50%);z-index:70;width:26px;height:26px;border-radius:50%;background:white;border:1px solid var(--border);box-shadow:0 2px 6px rgba(0,0,0,.15);cursor:pointer;display:none;align-items:center;justify-content:center;font-size:13px;color:var(--muted);padding:0}
+#sidebarEdgeBtn:hover{color:var(--blue);border-color:var(--blue)}
+@media(min-width:901px){#sidebarEdgeBtn{display:flex}}
+#sidebar.sidebar-collapsed{display:none}
+#sidebar.sidebar-collapsed+#sidebarEdgeBtn{left:0}
 .breadcrumb{font-size:13px;color:var(--muted);margin-bottom:18px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
 .breadcrumb a{color:var(--blue);text-decoration:none;font-weight:700}
 .breadcrumb a:hover{text-decoration:underline}
@@ -32,7 +37,7 @@ main{flex:1 1 auto;max-width:900px;margin:0 auto;padding:38px 24px 90px;min-widt
 .toc a{color:var(--blue);text-decoration:none;font-size:14px}
 .toc a:hover{text-decoration:underline}
 mark{background:#fff3a3;padding:0 2px;border-radius:3px}
-@media print{#sidebar,.breadcrumb,.page-nav,#backToTop,.nav-toggle-btn{display:none !important}.site-shell{display:block}main{max-width:100%;padding:0}.content{box-shadow:none;border-top:0}}
+@media print{#sidebar,.breadcrumb,.page-nav,#backToTop,.nav-toggle-btn,#sidebarEdgeBtn{display:none !important}.site-shell{display:block}main{max-width:100%;padding:0}.content{box-shadow:none;border-top:0}}
 @media(max-width:900px){
   .nav-toggle-btn{display:flex;position:fixed;left:16px;top:16px;z-index:70;width:44px;height:44px;border-radius:50%;background:var(--blue);color:white;border:0;font-size:19px;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.22)}
   #sidebar{position:fixed;left:0;top:0;bottom:0;height:100vh;transform:translateX(-100%);transition:transform .2s ease;z-index:65;box-shadow:4px 0 24px rgba(0,0,0,.18)}
@@ -43,6 +48,7 @@ mark{background:#fff3a3;padding:0 2px;border-radius:3px}
 <button class="nav-toggle-btn" id="navToggleBtn" aria-label="Ouvrir le menu">☰</button>
 <div class="site-shell">
 <nav id="sidebar"><a class="nav-home-link" href="../index.html">🏠 SENORIF interactif</a></nav>
+<button id="sidebarEdgeBtn" aria-label="Replier/déplier le menu" title="Replier/déplier le menu">‹</button>
 <main>
 <nav class="breadcrumb"><a href="../index.html">🏠 Accueil</a><span class="sep">›</span><span>Soins de support</span></nav>
 <div class="content" style="--blue:#C15A8A"><h1>Soins de support</h1><div class="list"><a class="item" href="prevention-des-effets-secondaires-de-la-chimiotherapie/index.html">› Prévention des effets secondaires de la chimiothérapie</a><a class="item" href="sante-osseuse/index.html">› Santé osseuse</a><a class="item" href="prise-en-charge-des-effets-indesirables-de-lhormonotherapie/index.html">› Prise en charge des effets indésirables de l’hormonothérapie</a><a class="item" href="nutrition/index.html">› Nutrition</a><a class="item" href="activite-physique-adaptee-apa-et-lutte-contre-la-sedentarite/index.html">› Activité physique adaptée (APA) et lutte contre la sédentarité</a><a class="item" href="soutien-psycho-oncologique/index.html">› Soutien psycho-oncologique</a><a class="item" href="evaluation-du-risque-thrombotique/index.html">› Evaluation du risque thrombotique :</a><a class="item" href="fertilite/index.html">› Fertilité</a><a class="item" href="grossesse-apres-cancer-du-sein/index.html">› Grossesse après cancer du sein</a><a class="item" href="prise-en-charge-des-difficultes-de-la-vie-sexuelle/index.html">› Prise en charge des difficultés de la vie sexuelle</a><a class="item" href="contraception/index.html">› Contraception</a><a class="item" href="sequelles-apres-traitement/index.html">› Séquelles après traitement</a><a class="item" href="education-therapeutique/index.html">› Education Thérapeutique</a><a class="item" href="soins-palliatifs-precoces/index.html">› Soins Palliatifs précoces</a><a class="item" href="les-soins-complementaires/index.html">› Les soins complémentaires</a></div></div>
@@ -145,6 +151,23 @@ document.addEventListener("DOMContentLoaded",function(){
       if(sidebar.classList.contains("open") && !sidebar.contains(e.target) && e.target!==toggleBtn){
         sidebar.classList.remove("open");
       }
+    });
+  }
+
+  // Repli du menu sur ordinateur (choix mémorisé d'une page à l'autre)
+  var edgeBtn=document.getElementById("sidebarEdgeBtn");
+  if(edgeBtn){
+    var STORAGE_KEY="senorif_sidebar_collapsed";
+    function isDesktop(){ return window.matchMedia("(min-width:901px)").matches; }
+    if(isDesktop() && localStorage.getItem(STORAGE_KEY)==="1"){
+      sidebar.classList.add("sidebar-collapsed");
+      edgeBtn.textContent="›";
+    }
+    edgeBtn.addEventListener("click",function(){
+      sidebar.classList.toggle("sidebar-collapsed");
+      var collapsed=sidebar.classList.contains("sidebar-collapsed");
+      localStorage.setItem(STORAGE_KEY, collapsed?"1":"0");
+      edgeBtn.textContent=collapsed?"›":"‹";
     });
   }
 })();

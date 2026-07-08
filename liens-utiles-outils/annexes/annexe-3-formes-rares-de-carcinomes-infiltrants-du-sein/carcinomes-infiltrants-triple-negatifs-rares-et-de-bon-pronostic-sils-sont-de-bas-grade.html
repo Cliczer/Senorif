@@ -15,6 +15,11 @@ main{flex:1 1 auto;max-width:900px;margin:0 auto;padding:38px 24px 90px;min-widt
 .nav-node:hover{background:#eef1fa}
 .nav-node.current{background:var(--blue);color:white;font-weight:800}
 .nav-toggle-btn{display:none}
+#sidebarEdgeBtn{position:fixed;top:26px;left:280px;transform:translateX(-50%);z-index:70;width:26px;height:26px;border-radius:50%;background:white;border:1px solid var(--border);box-shadow:0 2px 6px rgba(0,0,0,.15);cursor:pointer;display:none;align-items:center;justify-content:center;font-size:13px;color:var(--muted);padding:0}
+#sidebarEdgeBtn:hover{color:var(--blue);border-color:var(--blue)}
+@media(min-width:901px){#sidebarEdgeBtn{display:flex}}
+#sidebar.sidebar-collapsed{display:none}
+#sidebar.sidebar-collapsed+#sidebarEdgeBtn{left:0}
 .breadcrumb{font-size:13px;color:var(--muted);margin-bottom:18px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
 .breadcrumb a{color:var(--blue);text-decoration:none;font-weight:700}
 .breadcrumb a:hover{text-decoration:underline}
@@ -32,7 +37,7 @@ main{flex:1 1 auto;max-width:900px;margin:0 auto;padding:38px 24px 90px;min-widt
 .toc a{color:var(--blue);text-decoration:none;font-size:14px}
 .toc a:hover{text-decoration:underline}
 mark{background:#fff3a3;padding:0 2px;border-radius:3px}
-@media print{#sidebar,.breadcrumb,.page-nav,#backToTop,.nav-toggle-btn{display:none !important}.site-shell{display:block}main{max-width:100%;padding:0}.content{box-shadow:none;border-top:0}}
+@media print{#sidebar,.breadcrumb,.page-nav,#backToTop,.nav-toggle-btn,#sidebarEdgeBtn{display:none !important}.site-shell{display:block}main{max-width:100%;padding:0}.content{box-shadow:none;border-top:0}}
 @media(max-width:900px){
   .nav-toggle-btn{display:flex;position:fixed;left:16px;top:16px;z-index:70;width:44px;height:44px;border-radius:50%;background:var(--blue);color:white;border:0;font-size:19px;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.22)}
   #sidebar{position:fixed;left:0;top:0;bottom:0;height:100vh;transform:translateX(-100%);transition:transform .2s ease;z-index:65;box-shadow:4px 0 24px rgba(0,0,0,.18)}
@@ -43,6 +48,7 @@ mark{background:#fff3a3;padding:0 2px;border-radius:3px}
 <button class="nav-toggle-btn" id="navToggleBtn" aria-label="Ouvrir le menu">☰</button>
 <div class="site-shell">
 <nav id="sidebar"><a class="nav-home-link" href="../../../index.html">🏠 SENORIF interactif</a></nav>
+<button id="sidebarEdgeBtn" aria-label="Replier/déplier le menu" title="Replier/déplier le menu">‹</button>
 <main>
 <nav class="breadcrumb"><a href="../../../index.html">🏠 Accueil</a><span class="sep">›</span><a href="../../../liens-utiles-outils/index.html">Liens utiles &amp; outils</a><span class="sep">›</span><a href="../../../liens-utiles-outils/annexes/index.html">Annexes</a><span class="sep">›</span><a href="../../../liens-utiles-outils/annexes/annexe-3-formes-rares-de-carcinomes-infiltrants-du-sein/index.html">Annexe 3 : formes rares de carcinomes infiltrants du sein</a><span class="sep">›</span><span>Carcinomes infiltrants triple négatifs rares et de bon pronostic s’ils sont de bas grade.</span></nav>
 <div class="content" style="--blue:#5570AE"><h1>Carcinomes infiltrants triple négatifs rares et de bon pronostic s’ils sont de bas grade.</h1><p><strong>Carcinome adénoïde kystique (CAK) </strong><strong>(</strong>0.1–3.5% de tous les cancers du sein): carcinome présentant le même aspect que son equivalent des glandes salivaires. Trois formes histologiques sont décrites&nbsp;: CAK classique, CAK solide-basaloïde (CAK SB) et CAK avec transformation en haut grade (CAK-HG). Il peut se développer dans n’importe quel quadrant mais survient le plus frequemment dans la région rétro-aréolaire chez la femme adulte et le plus souvent âgée. Il est constitué de deux contingents cellulaires, épithélial (CK7+, CK8+) et myoépithélial (p63+, CK14+, CK5/6+, Calponine+, AML+, CD10+, et autres marqueurs myoépithéliaux…) agencés en structures tubuleuses/cribriformes/solides et caractérisé, par une translocation t(6 ;9)  conduisant à un gène de fusion <em>MYB-NF1B</em> (plus rarement, il s’agit d’un réarrangement de <em>MYBL1</em> ou amplification de <em>MYB</em>). En immunohistochimie, CD117 (positivité diffuse) est un des éléments d’aide au diagnostic mais c’est surtout la surexpression de MYB (expression nucléaire forte et diffuse) qui permet le diagnostic (<span style="color:#3366FF;">Massé et al., 2020; Poling et al., 2017</span>).&nbsp;Le pronostic dépend du stade et du variant de CAK&nbsp;: <strong>le CAK classique (de bas grade) a un pronostic favorable</strong> (91-95% de survie à 15 ans) avec un risque de récidive essentiellement locale et un faible risque d’atteinte ganglionnaire ou métastatique.<strong><span style="color:#131413;"> Le CAK -SB</span></strong><span style="color:#131413;"> </span><strong><span style="color:#131413;">et CAK CAK-HG </span></strong><span style="color:#131413;">ont un pronostic plus défavorable.</span></p>
@@ -159,6 +165,23 @@ document.addEventListener("DOMContentLoaded",function(){
       if(sidebar.classList.contains("open") && !sidebar.contains(e.target) && e.target!==toggleBtn){
         sidebar.classList.remove("open");
       }
+    });
+  }
+
+  // Repli du menu sur ordinateur (choix mémorisé d'une page à l'autre)
+  var edgeBtn=document.getElementById("sidebarEdgeBtn");
+  if(edgeBtn){
+    var STORAGE_KEY="senorif_sidebar_collapsed";
+    function isDesktop(){ return window.matchMedia("(min-width:901px)").matches; }
+    if(isDesktop() && localStorage.getItem(STORAGE_KEY)==="1"){
+      sidebar.classList.add("sidebar-collapsed");
+      edgeBtn.textContent="›";
+    }
+    edgeBtn.addEventListener("click",function(){
+      sidebar.classList.toggle("sidebar-collapsed");
+      var collapsed=sidebar.classList.contains("sidebar-collapsed");
+      localStorage.setItem(STORAGE_KEY, collapsed?"1":"0");
+      edgeBtn.textContent=collapsed?"›":"‹";
     });
   }
 })();
