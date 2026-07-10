@@ -1,0 +1,74 @@
+{
+  "colonnes": [
+    "",
+    "",
+    "IRM mammaire annuelle",
+    "Mammographieannuelle",
+    "Echographie mammaireannuelle",
+    "Examen clinique",
+    "Examen clinique",
+    "Durée du suivi"
+  ],
+  "lignes": [
+    [
+      "",
+      "",
+      "IRM mammaire annuelle",
+      "Mammographieannuelle",
+      "Echographie mammaireannuelle",
+      "semestriel",
+      "annuel",
+      "Durée du suivi"
+    ],
+    [
+      "Antécédent personnel de Cancer du sein≤ 35 ans (sans histoire familiale)(niveau de preuve faible)",
+      "Antécédent personnel de Cancer du sein≤ 35 ans (sans histoire familiale)(niveau de preuve faible)",
+      "Oui",
+      "Oui2 incidences",
+      "optionnelle",
+      "OuiLes 5 1ièresannées",
+      "OUISuivi après 5 ans",
+      "Surveillance radiologique à réévaluer entre 35 et 40 ans"
+    ],
+    [
+      "Irradiation thoracique haute dose≤ 30 ans(Maladie de Hodgkin, irradiation corporelle totale)",
+      "IndemneIrradiation   il y a plus de 8 ans et  de 25 ans à 30 ans",
+      "OUI",
+      "NON",
+      "optionnelle",
+      "OOUI",
+      "NON",
+      "IRM à réévaluer à 50 ans"
+    ],
+    [
+      "Irradiation thoracique haute dose≤ 30 ans(Maladie de Hodgkin, irradiation corporelle totale)",
+      "IndemneIrradiation   il y a plus de 8 ans et  ≥ 30 ans",
+      "OUI",
+      "OUI1 incidenceOblique externe",
+      "optionnelle",
+      "OUIOOUIOUI",
+      "NON",
+      ""
+    ],
+    [
+      "Irradiation thoracique haute dose≤ 30 ans(Maladie de Hodgkin, irradiation corporelle totale)",
+      "Ayant un cancer du sein",
+      "OUI",
+      "OUI2 incidences",
+      "optionnelle",
+      "Oui",
+      "NON",
+      ""
+    ],
+    [
+      "Irradiation thoracique haute dose entre 30 et 40 ans",
+      "Irradiation thoracique haute dose entre 30 et 40 ans",
+      "NON",
+      "OUI2 incidences",
+      "optionnelle",
+      "NON",
+      "OUI",
+      ""
+    ]
+  ]
+}

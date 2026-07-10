@@ -1,0 +1,64 @@
+{
+  "colonnes": [
+    "Type histologique",
+    "Conduite à tenir si diagnostic fait sur microbiopsie",
+    "Conduite à tenir si diagnostic fait sur macrobiopsie"
+  ],
+  "lignes": [
+    [
+      "Hyperplasie canalaire atypique (HCA)",
+      "Exérèse chirurgicaleSi < 15 mm : macrobiopsie d’exérèse",
+      "Exérèse chirurgicaleSuivi radiologique* si < 15 mm et exérèse complète"
+    ],
+    [
+      "Métaplasie cylindrique atypique (MCA)",
+      "Macrobiopsie d’éxérèse",
+      "Exérèse chirurgicale si discordance ou lésion résiduelleSuivi radiologique*"
+    ],
+    [
+      "Hyperplasie lobulaire atypique (HLA)",
+      "Macrobiopsie d’exérèse",
+      "Exérèse chirurgicale si discordance ou lésion résiduelleSuivi radiologique*"
+    ],
+    [
+      "Carcinome lobulaire in situ (CLIS) classique",
+      "Macrobiopsie d’exérèse",
+      "Exérèse chirurgicale si discordance ou lésion résiduelleSuivi radiologique*"
+    ],
+    [
+      "Hyperplasie apocrine atypique (HAA)",
+      "Macrobiopsie d’éxérèse",
+      "Suivi radiologique*"
+    ],
+    [
+      "Papillome (central ou périphérique)",
+      "Exérèse chirurgicale : si atypie Si taille trop importante pour macrobiopsie d’éxérèseSi trop proche de la PAM (papillome central Sinon macrobiopsie d’exérèse possible",
+      "Exérèse chirurgicale si atypie ou exérèse incomplèteSuivi radiologique* si pas d’atypie et exérèse complète"
+    ],
+    [
+      "Lésion sclérosante complexe (dont cicatrice radiaire radiaire et épithéliose infiltrante)",
+      "Exérèse chirurgicale si atypieMacrobiopsie d’exérèse si pas d’atypie",
+      "Exérèse chirurgicale si atypieSuivi radiologique* si pas d’atypie et exérèse complète"
+    ],
+    [
+      "Adénomyoépithéliome",
+      "Exérèse chirurgicale",
+      "Exérèse chirurgicale"
+    ],
+    [
+      "Adénose microglandulaire",
+      "Exérèse chirurgicale",
+      "Exérèse chirurgicale"
+    ],
+    [
+      "Fibromatose",
+      "Pas de ligne directrice clairement établie : actuellement, surveillance très rapprochée (en raison des taux élevés de récidive et de la morbidité chirurgicale associée) : surveillance à 1 mois, puis à 3 mois, puis en cas de stabilité /6 mois. Exérèse chirurgicale / inhibiteurs des TKI à discuter en RCP si progression.",
+      "Pas de ligne directrice clairement établie : actuellement, surveillance très rapprochée (en raison des taux élevés de récidive et de la morbidité chirurgicale associée) : surveillance à 1 mois, puis à 3 mois, puis en cas de stabilité /6 mois. Exérèse chirurgicale / inhibiteurs des TKI à discuter en RCP si progression."
+    ],
+    [
+      "Mucocèle",
+      "Si atypie, se référer à la prise en charge des lésions atypiquesSi pas d’aztypie, suivi radiologique",
+      "Si atypie, se référer à la prise en charge des lésions atypiquesSi pas d’aztypie, suivi radiologique"
+    ]
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "colonnes": [
+    "Domaines cliniques",
+    "Gestion en cas de problèmes"
+  ],
+  "lignes": [
+    [
+      "Problèmes d'image corporelle",
+      "Offrir l’option   de   dispositifs   adaptatifs (par exemple, prothèses mammaires, prothèses capillaires).Offrir des options chirurgicales.Evaluation des besoins psychosociaux."
+    ],
+    [
+      "Lymphœdème",
+      "Conseils systématiques sur la prévention de lymphœdème, y compris la perte de poids chez les personnes en surpoids ou obèses.Les patients présentant des symptômes cliniques évoquant un lymphœdème devraient être dirigés vers un thérapeute spécialisé dans le diagnostic et le traitement du lymphœdème, tel qu'un thérapeute physique, un ergothérapeute ou un spécialiste du lymphœdème.Eliminer rechute/thrombose/infection.Prise de sang et prise de TA autorisés en l’absence de lymphoedème."
+    ],
+    [
+      "Cardiotoxicité",
+      "Surveillance des taux de lipides et surveillance cardiovasculaire, incluant la modification du mode de vie et des comportements de santé susceptibles de réduire les facteurs de risque cardiaques potentiels.Signaler les symptômes importants (essoufflement ou fatigue)."
+    ],
+    [
+      "Problèmes cognitifs",
+      "Evaluer les facteurs favorisants et potentiellement réversibles des troubles cognitifs (et les traiter de manière optimale lorsque cela est possible) : comédications, détresse émotionnelle, symptômes non contrôlés (fatigue, douleur, troubles du sommeil), comorbidités, consommation d'alcool.Quelques conseils au quotidien :Enseigner des stratégies organisationnelles, Encourager les patients à effectuer les tâches les plus exigeantes sur le plan cognitif au moment du jour où l'énergie est maximaleRecommander l'activité physique.Limiter l'alcool ou des agents qui altèrent la cognition et le sommeil.Les exercices de rémédiation cognitive :  Pour exemple l’association ONCOGITE offre la possibilité de participer à un programme de remédiation cognitive en ligne, très complet et personnalisé, se déroulant sur plusieurs mois.Si besoin orientation vers une consultation spécialisée pour un bilan neuro-cognitif."
+    ]
+  ]
+}

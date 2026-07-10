@@ -1,0 +1,118 @@
+{
+  "colonnes": [
+    "Cancer du sein – Stade PRECOCE",
+    "Cancer du sein – Stade PRECOCE",
+    "Cancer du sein – Stade PRECOCE",
+    "Cancer du sein – Stade PRECOCE"
+  ],
+  "lignes": [
+    [
+      "Molécule",
+      "RT locorégionale mammaire concomitante",
+      "RT locorégionale mammaire concomitante",
+      "Réf. complémentaires"
+    ],
+    [
+      "Molécule",
+      "Oui",
+      "Non",
+      "Réf. complémentaires"
+    ],
+    [
+      "Chimiothérapie",
+      "Chimiothérapie",
+      "Chimiothérapie",
+      "Chimiothérapie"
+    ],
+    [
+      "Anthracyclines",
+      "",
+      "X",
+      ""
+    ],
+    [
+      "Docetaxel",
+      "",
+      "X",
+      ""
+    ],
+    [
+      "Paclitaxel*",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Capécitabine*",
+      "",
+      "",
+      "Woodward IJROBP 2017"
+    ],
+    [
+      "Carboplatine",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Anti-HER2",
+      "Anti-HER2",
+      "Anti-HER2",
+      "Anti-HER2"
+    ],
+    [
+      "Trastuzumab",
+      "",
+      "",
+      ""
+    ],
+    [
+      "TDM-1",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Immunothérapie",
+      "Immunothérapie",
+      "Immunothérapie",
+      "Immunothérapie"
+    ],
+    [
+      "Pembrolizumab",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Hormonothérapie",
+      "Hormonothérapie",
+      "Hormonothérapie",
+      "Hormonothérapie"
+    ],
+    [
+      "Inhibiteurs de l’aromatase",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Tamoxifène",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Inhibiteur de PARP",
+      "Inhibiteur de PARP",
+      "Inhibiteur de PARP",
+      "Inhibiteur de PARP"
+    ],
+    [
+      "Olaparib",
+      "§Loap IJROBP 2025",
+      "§Loap IJROBP 2025",
+      "§Loap IJROBP 2025"
+    ]
+  ]
+}

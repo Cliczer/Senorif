@@ -1,0 +1,52 @@
+{
+  "colonnes": [
+    "",
+    "Pas d’atteinte de la limite de résection",
+    "Marge ≥ 2 mm",
+    "Pas besoin de berges saines"
+  ],
+  "lignes": [
+    [
+      "Carcinome infiltrant",
+      "X",
+      "",
+      ""
+    ],
+    [
+      "Carcinome infiltrant + in situ",
+      "X*",
+      "",
+      ""
+    ],
+    [
+      "Carcinome infiltrant + carcinome in situ majoritaire",
+      "",
+      "X",
+      ""
+    ],
+    [
+      "Carcinome infiltrant après chimiothérapie néo adjuvante",
+      "X",
+      "",
+      ""
+    ],
+    [
+      "Carcinome in situ",
+      "",
+      "X",
+      ""
+    ],
+    [
+      "Carcinome in situ avec micro invasion (canalaire et lobulaire pléomorphe)",
+      "",
+      "X",
+      ""
+    ],
+    [
+      "Carcinome lobulaire in situ classique / atypies",
+      "",
+      "",
+      "X"
+    ]
+  ]
+}

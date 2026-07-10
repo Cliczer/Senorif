@@ -1,0 +1,52 @@
+{
+  "colonnes": [
+    "Facteurs",
+    "0",
+    "0.5",
+    "1.0",
+    "1.5",
+    "Score"
+  ],
+  "lignes": [
+    [
+      "KPS",
+      "≤60",
+      "70-80",
+      "90-100",
+      "NA",
+      ""
+    ],
+    [
+      "Sous-type",
+      "Basal",
+      "Luminal A",
+      "NA",
+      "HER2 ou luminal B",
+      ""
+    ],
+    [
+      "Age",
+      "≤60",
+      ">60",
+      "NA",
+      "NA",
+      ""
+    ],
+    [
+      "Nombre de MC",
+      ">1",
+      "1",
+      "NA",
+      "NA",
+      ""
+    ],
+    [
+      "Maladie extra-cérébrale",
+      "Présente",
+      "Absente",
+      "",
+      "",
+      ""
+    ]
+  ]
+}

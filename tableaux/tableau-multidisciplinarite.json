@@ -1,0 +1,44 @@
+{
+  "colonnes": [
+    "Situation",
+    "Recommandation"
+  ],
+  "lignes": [
+    [
+      "Avant macrobiopsie sous guidage mammographique (stéréotaxie, tomosynthèse)",
+      "Concertation de 2 spécialistes minimum"
+    ],
+    [
+      "Avant chirurgie pour cancer du sein",
+      "RCP recommandée"
+    ],
+    [
+      "Avant traitement médical néo-adjuvant pour cancer du sein",
+      "RCP systématique"
+    ],
+    [
+      "Post-opératoire d’un cancer du sein localisé",
+      "RCP systématique"
+    ],
+    [
+      "Rechute locale d’un cancer du sein",
+      "RCP systématique"
+    ],
+    [
+      "Entrée en phase métastatique",
+      "RCP systématique (accord experts)"
+    ],
+    [
+      "En cours de phase métastatique",
+      "Optionnel si besoin (incluant RCP spécifiques transversales: os, encéphale, etc)"
+    ],
+    [
+      "Avant chirurgie prophylactique",
+      "RCP systématique incluant experts en génétique + consultation psychologie"
+    ],
+    [
+      "Proposition de traitement hors AMM ou limite",
+      "RCP obligatoire"
+    ]
+  ]
+}

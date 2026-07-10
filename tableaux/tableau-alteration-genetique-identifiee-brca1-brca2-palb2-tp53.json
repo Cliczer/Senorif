@@ -1,0 +1,103 @@
+{
+  "colonnes": [
+    "",
+    "",
+    "",
+    "IRM mammaire",
+    "Mammographie",
+    "Echographie mammaire",
+    "Examen clinique"
+  ],
+  "lignes": [
+    [
+      "BRCA1, BRCA2,PALB2",
+      "Indemne",
+      "20-25 ans",
+      "NON",
+      "NON",
+      "NON",
+      "annuel"
+    ],
+    [
+      "BRCA1, BRCA2,PALB2",
+      "Indemne",
+      "25-30 ans",
+      "Optionnelle*",
+      "NON",
+      "Optionnelle*",
+      "semestriel*"
+    ],
+    [
+      "BRCA1, BRCA2,PALB2",
+      "Indemne",
+      "30-65ans",
+      "OUI",
+      "Oui 1 incidence oblique externe",
+      "optionnelle",
+      "semestriel"
+    ],
+    [
+      "BRCA1, BRCA2,PALB2",
+      "Indemne",
+      "> 65 ans",
+      "NON **",
+      "Oui2 incidences",
+      "optionnelle",
+      "semestriel"
+    ],
+    [
+      "BRCA1, BRCA2,PALB2",
+      "Ayant eu un cancer du sein",
+      "≤ 65 ans",
+      "OUI",
+      "OUI2 incidences",
+      "optionnelle",
+      "semestriel"
+    ],
+    [
+      "BRCA1, BRCA2,PALB2",
+      "Ayant eu un cancer du sein",
+      "> 65 ans",
+      "NON",
+      "OUI2 incidences",
+      "optionnelle",
+      "semestriel"
+    ],
+    [
+      "TP 53***",
+      "Indemne",
+      "20-29 ans",
+      "OUI",
+      "NON",
+      "OUI",
+      "semestriel"
+    ],
+    [
+      "TP 53***",
+      "Indemne",
+      "≥ 30 ans",
+      "OUI",
+      "OUI1 incidence oblique externe",
+      "optionnelle",
+      "semestriel"
+    ],
+    [
+      "TP 53***",
+      "Ayant eu un cancer du sein",
+      "Ayant eu un cancer du sein",
+      "OUI",
+      "OUI1 incidence si possible",
+      "optionnelle",
+      "semestriel"
+    ],
+    [
+      "Autres prédispositions rares***",
+      "Indemne ou ayant eu un cancer du sein",
+      "Indemne ou ayant eu un cancer du sein",
+      "Doit être validé en consultation d’oncogénétique",
+      "Doit être validé en consultation d’oncogénétique",
+      "Doit être validé en consultation d’oncogénétique",
+      "Doit être validé en consultation d’oncogénétique"
+    ]
+  ]
+}
